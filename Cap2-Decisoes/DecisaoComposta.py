@@ -1,7 +1,8 @@
 #Texto base
 #Filtro: paciente com doença infectocontagiosa e atendimento preferencial
 #Sala branca: paciente sem doença infectoc. mas com ou sem prioridade
-#Sala amarela: pacientes com doenças infectoc. mas com ou sem prioridade
+#Sala amarela: pacientes com doença infectoc. mas com ou sem prioridade
+#Ver DecisaoEncadeada.py
 
 nome = input("Digite o nome do paciente: ")
 idade = int(input("Digite a idade do paciente: "))
