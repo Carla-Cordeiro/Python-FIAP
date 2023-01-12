@@ -25,8 +25,8 @@ while resposta == "SIM":
         if genero == "FEMININO" and idade > 10:
             gravidez = input("A paciente está gravida? ").upper()
             if gravidez == "SIM":
-                print("Paciente " + nome + " COM prioridade.")
+                print("Paciente " + nome + " COM prioridade.\n")
             else:
-                print("Paciente " + nome + " SEM prioridade.")
+                print("Paciente " + nome + " SEM prioridade.\n")
         else:
-            print("Paciente " + nome + " SEM prioridade.")
+            print("Paciente " + nome + " SEM prioridade.\n")
