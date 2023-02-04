@@ -1,4 +1,4 @@
-from ../Cap3-Funcoes.IdentificacaoDeFuncoes import *
+from Cap3_Funcoes.IdentificacaoDeFuncoes import *
 
 minhaLista = []
 print("Preenchendo")
