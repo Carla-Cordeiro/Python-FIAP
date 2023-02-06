@@ -28,7 +28,7 @@ def excluir(dicionario, chave):
 
 
 def listar(dicionario):
-    for chave, valor in dicionario.itens():
+    for chave, valor in dicionario.items():
         print("Objeto: ")
         print("Login: ", chave)
         print("Dados: ", valor)
