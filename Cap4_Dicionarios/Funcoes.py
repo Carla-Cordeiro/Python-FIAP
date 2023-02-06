@@ -11,3 +11,24 @@ def inserir(dicionario):
     dicionario[input("Digite o login: ").upper()] = [input("Digite o nome: ").upper(),
                                                      input("Digite a data de acesso: ").upper(),
                                                      input("Digite a ultima estação acessada: ").upper()]
+
+
+def pesquisar(dicionario, chave):
+    lista = dicionario.get(chave)
+    if lista != None:
+        print("Nome: " + lista[0])
+        print("Último acesso: " + lista[1])
+        print("Última estação: " + lista[2])
+
+
+def excluir(dicionario, chave):
+    if dicionario.get(chave) != None:
+        del dicionario[chave]
+    print("Objeto exluído.")
+
+
+def listar(dicionario):
+    for chave, valor in dicionario.itens():
+        print("Objeto: ")
+        print("Login: ", chave)
+        print("Dados: ", valor)
