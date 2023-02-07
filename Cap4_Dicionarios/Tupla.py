@@ -12,5 +12,5 @@ for ip in ips.keys():
 print("Exibindo as máquinas que compõem a mesma rede: ")
 rede = input("Digite os dois primeiros octetos: ")
 for ip, nome in ips.items():
-    if (ip[0] == rede):
+    if ip[0] == rede:
         print(nome)
