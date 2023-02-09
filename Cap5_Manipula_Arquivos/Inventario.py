@@ -1,4 +1,3 @@
-import csv
 from Funcoes.Funcoes_Arquivos import *
 
 inventario = {}
