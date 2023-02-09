@@ -10,7 +10,22 @@ while 0 < opcao < 4:
     elif opcao == 3:
         resultado = exibir()
         for linha in resultado:
-            print(linha[linha.find(";")+1:-1])
+
+            lista = linha.split(";")
+            print("Data: ", lista[1])
+            print("Descrição: ", lista[2])
+            print("Departamento: ", lista[3])
+
+            # separacao = linha[linha.find(";") + 1:-1]
+            # data = separacao[0:separacao.find(";")]
+            # separacao = separacao[separacao.find(";") + 1:-1]
+            # descricao = separacao[0:separacao.find(";")]
+            # departamento = linha[linha.rfind(";") + 1:-1]
+            # print("Data: ", data)
+            # print("Descrição: ", descricao)
+            # print("Departamento: ", departamento)
+
+
     opcao = chamarMenu()
 
 # opcao = int(input("Digite: "
