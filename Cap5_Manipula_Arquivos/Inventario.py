@@ -1,6 +1,18 @@
 from Funcoes.Funcoes_Arquivos import *
 
 inventario = {}
+opcao = chamarMenu()
+while 0 < opcao < 4:
+    if opcao == 1:
+        registrar(inventario)
+    elif opcao == 2:
+        persistir(inventario)
+    elif opcao == 3:
+        resultado = exibir()
+        for linha in resultado:
+            print(linha[2:-1])
+    opcao = chamarMenu()
+
 # opcao = int(input("Digite: "
 #                   "\n<1> para registrar ativo"
 #                   "\n<2> para persistir em arquivo"
@@ -28,13 +40,3 @@ inventario = {}
 #                           "\n<1> para registrar arquivo"
 #                           "\n<2> para persistir em arquivo"
 #                           "\n<3> para exibir ativos armazenados: "))
-
-opcao = chamarMenu()
-while 0 < opcao < 4:
-    if opcao == 1:
-        registrar(inventario)
-    elif opcao == 2:
-        persistir(inventario)
-    elif opcao == 3:
-        print(exibir())
-    opcao = chamarMenu()
