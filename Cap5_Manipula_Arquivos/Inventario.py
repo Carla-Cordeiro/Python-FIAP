@@ -10,7 +10,7 @@ while 0 < opcao < 4:
     elif opcao == 3:
         resultado = exibir()
         for linha in resultado:
-            print(linha[2:-1])
+            print(linha[linha.find(";")+1:-1])
     opcao = chamarMenu()
 
 # opcao = int(input("Digite: "
