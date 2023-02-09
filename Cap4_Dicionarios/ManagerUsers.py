@@ -1,4 +1,4 @@
-from Cap4_Dicionarios.Funcoes import *
+from Funcoes.Funcoes_Dicionario import *
 
 usuarios = {}
 
