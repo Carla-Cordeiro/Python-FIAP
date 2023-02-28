@@ -1,5 +1,6 @@
 import os
 from ftplib import *
+
 ftp_ativo = False
 ftp = FTP(input("Digite o FTP que deseja conectar: "))
 print(ftp.getwelcome())
